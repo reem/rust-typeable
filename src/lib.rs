@@ -7,7 +7,11 @@
 
 use std::intrinsics::TypeId;
 
-pub trait Typeable: 'static { fn get_type(&self) -> TypeId { TypeId::of::<Self>() } }
+/// Universal mixin trait for adding a `get_type` method.
+pub trait Typeable: 'static {
+    /// Get the `TypeId` of this object.
+    fn get_type(&self) -> TypeId { TypeId::of::<Self>() }
+}
 
 impl<T: 'static> Typeable for T {}
 
