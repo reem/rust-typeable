@@ -10,6 +10,7 @@ use std::intrinsics::TypeId;
 /// Universal mixin trait for adding a `get_type` method.
 pub trait Typeable: 'static {
     /// Get the `TypeId` of this object.
+    #[inline(always)]
     fn get_type(&self) -> TypeId { TypeId::of::<Self>() }
 }
 
