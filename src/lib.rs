@@ -1,5 +1,5 @@
 #![license = "MIT"]
-#![deny(missing_doc)]
+#![deny(missing_docs)]
 #![deny(warnings)]
 
 //! Exposes `Typeable`, which exposes the `get_type` method, which gives
