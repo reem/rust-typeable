@@ -3,6 +3,7 @@
 name = "typeable"
 version = "0.0.2"
 authors = ["Jonathan Reem <jonathan.reem@gmail.com>"]
+license = "MIT"
 
 [lib]
 
