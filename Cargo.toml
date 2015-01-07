@@ -1,7 +1,7 @@
 [package]
 
 name = "typeable"
-version = "0.0.4"
+version = "0.0.5"
 authors = ["Jonathan Reem <jonathan.reem@gmail.com>"]
 description = "Exposes Typeable, for getting TypeIds at runtime."
 repository = "https://github.com/reem/rust-typeable"
