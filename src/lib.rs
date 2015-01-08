@@ -1,3 +1,4 @@
+#![allow(staged_experimental)]
 #![deny(missing_docs)]
 #![deny(warnings)]
 
@@ -10,7 +11,7 @@ use std::intrinsics::TypeId;
 ///
 pub trait Typeable: 'static {
     /// Get the `TypeId` of this object.
-    fn get_type(&self) -> TypeId where Self: Sized { TypeId::of::<Self>() }
+    fn get_type(&self) -> TypeId { TypeId::of::<Self>() }
 }
 
 impl<T: 'static> Typeable for T {}
