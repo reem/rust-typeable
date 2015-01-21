@@ -5,7 +5,7 @@
 //! Exposes `Typeable`, which exposes the `get_type` method, which gives
 //! the `TypeId` of any 'static type.
 
-use std::intrinsics::TypeId;
+use std::any::TypeId;
 
 /// Universal mixin trait for adding a `get_type` method.
 ///
