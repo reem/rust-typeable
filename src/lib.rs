@@ -11,6 +11,7 @@ use std::any::TypeId;
 ///
 pub trait Typeable: 'static {
     /// Get the `TypeId` of this object.
+    #[inline(always)]
     fn get_type(&self) -> TypeId { TypeId::of::<Self>() }
 }
 
