@@ -1,4 +1,3 @@
-#![feature(core)]
 #![deny(missing_docs)]
 #![deny(warnings)]
 
